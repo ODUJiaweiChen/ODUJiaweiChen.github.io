@@ -14,10 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 💀陆国松的编程笔记
-description: 一个Java程序员的学习笔记
-url: "https://www.luguosong.com" # the base hostname & protocol for your site, e.g. http://example.com
-repository: luguosong/programming-notes # for github-metadata
+title: 💀Chenxixi's Farm
+description: 陈西西的一亩三分地
+url: "https://odujiaweichen.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+repository: ODUJiaweiChen/odujiaweichen.github.io # for github-metadata
 
 
 #permalink: pretty
@@ -126,7 +126,7 @@ heading_anchors: true
 # Aux links for the upper right navigation
 aux_links:
   "Code on GitHub":
-    - "//github.com/luguosong/programming-notes"
+    - "//github.com/ODUJiaweiChen/odujiaweichen.github.io"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
@@ -138,7 +138,7 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 # External navigation links
 nav_external_links:
   - title: Code on GitHub
-    url: https://github.com/luguosong/programming-notes
+    url: https://github.com/ODUJiaweiChen/odujiaweichen.github.io
 
 # Footer content
 # appears at the bottom of every page's main content
@@ -158,13 +158,13 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "在GitHub上编辑此页面"
-gh_edit_repository: "https://github.com/luguosong/programming-notes" # the github URL for your repo
+gh_edit_repository: "https://github.com/ODUJiaweiChen/odujiaweichen.github.io" # the github URL for your repo
 gh_edit_branch: "note" # the branch that your docs is served from
 # gh_edit_source: docs # the source that your files originate from
 gh_edit_view_mode: "edit" # "tree" or "edit" if you want the user to jump into the editor immediately
 
 # Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
-color_scheme: dark
+color_scheme: light
 
 callouts_level: loud # or quiet
 callouts:
