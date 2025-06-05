@@ -1,164 +1,178 @@
 # Welcome to Jekyll!
+# 欢迎来到 Jekyll！
 #
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
+# 这个配置文件用于设置影响你整个网站的参数，这些参数通常只需要设置一次，之后很少需要修改。
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
+# `jekyll serve -l -H localhost`. If you change this file, please restart the
 # server process.
+# 由于技术原因，当你使用 `jekyll serve -l -H localhost` 命令时，此文件不会自动重新加载。如果你修改了此文件，请重启服务器进程。
 
 # Basic Site Settings
-locale                   : "en-US"
-site_theme               : "default"
-title                    : "Your Name / Site Title"
-title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+# 基本站点设置
+locale                  : "en-US" # 设置你的网站的语言环境，例如 "en-US" 表示美式英语。
+site_theme              : "default" # 指定你的 Jekyll 网站使用的主题。
+title                   : "Jiawei's Homepage" # 你网站的主标题，显示在浏览器标签页中，也可能显示在网站本身。
+title_separator         : "-" # 在浏览器标签页中，页面标题和网站标题之间的分隔符。
+name                    : &name "Jiawei Chen" # 你的名字或与网站相关的主要名称。`&name` 是一个 YAML 锚点，用于重复使用。
+description             : &description "Jiawei Chen's Homepage & Blogs." # 你的网站的简短描述，通常用于搜索引擎的元标签。`&description` 是一个 YAML 锚点。
+url                     : https://odujiaweichen.github.io # 你网站的基础 URL（例如 "https://yourusername.github.io" 或 "https://yourusername.github.io/your-repo-name"）。
+baseurl                 : "" # 如果你的网站托管在子目录中，则为网站的子路径（例如 "/blog"）。如果托管在根目录，则留空。
+repository              : "ODUJiaweiChen/ODUJiaweiChen.github.io" # 你的网站源代码所在的 GitHub 仓库。
 
 # Site Author - The following control what appear as part of the author content on the side bar.
+# 站点作者 - 以下内容控制侧边栏作者信息。
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
+#               如果某个字段为空，则不会显示图标和链接，否则会显示。
 #               Additional customization can be done by editing /_includes/author-profile.html
+#               额外的自定义可以通过编辑 /_includes/author-profile.html 文件来完成。
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+  # 传记信息
+  avatar                : "profile.png" # 你的个人资料图片的文件名，位于 /images/ 目录中。
+  name                  : "Jiawei Chen (陈家威)" # 显示在侧边栏作者资料中的名称。
+  pronouns              : # example: "she/her" # 你的代词，如果你希望显示它们。
+  bio                   : "CS Ph.D. candidate." # 显示在侧边栏中的简短传记。
+  location              : "Norfolk, VA, USA" # 你当前的所在地。
+  employer              : "Old Dominion University" # 你的雇主或所属机构。
+  uri                   : # URL # 与作者相关的通用 URL（例如个人网站）。
+  email                 : "jchen015@odu.edu" # 你的电子邮件地址。
 
   # Academic websites
-  academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-  impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
-  semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
-  scopus           : # URL
+  # 学术网站
+  academia              : # URL # 你的 Academia.edu 个人资料链接。
+  arxiv                 : # URL - Update with the correct link to your profile # 你的 arXiv 个人资料链接。
+  googlescholar         : "https://scholar.google.com/citations?user=Rv78Eb8AAAAJ&hl=zh-CN&authuser=1" # 你的 Google Scholar 个人资料链接。
+  impactstory           : # URL # 你的 Impactstory 个人资料链接。
+  orcid                 : "https://orcid.org/my-orcid?orcid=0009-0001-6078-0059" # 你的 ORCID 个人资料链接。
+  semantic              : # URL # 你的 Semantic Scholar 个人资料链接。
+  pubmed                : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow" # 你的 PubMed 个人资料或出版物链接。
+  researchgate          : # URL # 你的 ResearchGate 个人资料链接。
+  scopus                : # URL # 你的 Scopus 个人资料链接。
 
   # Repositories and software development
-  bitbucket        : # Username - Update with your username on the site
-  codepen          : # Username
-  dribbble         : # Username
-  github           : "academicpages"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
+  # 仓库和软件开发
+  bitbucket             : # Username - Update with your username on the site # 你的 Bitbucket 用户名。
+  codepen               : # Username # 你的 CodePen 用户名。
+  dribbble              : # Username # 你的 Dribbble 用户名。
+  github                : "ODUJiaweiChen" # 你的 GitHub 用户名。
+  kaggle                : # Username # 你的 Kaggle 用户名。
+  stackoverflow         : # User number or user number and name (i.e., use "1" or "1/jeff-atwood") # 你的 Stack Overflow 用户 ID。
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
-  facebook         : # Username
-  flickr           : # Username
-  foursquare       : # Username
-  goodreads        : # Username
-  google_plus      : # Username
-  keybase          : # Username
-  instagram        : # Username
-  lastfm           : # Username
-  linkedin         : # Username
-  mastodon         : # URL
-  medium           : # URL
-  pinterest        : # Username
-  soundcloud       : # Username
-  steam            : # Username
-  telegram         : # URL
-  tumblr           : # Username
-  twitter          : # Username for X / Twitter
-  vine             : # Username
-  weibo            : # Username
-  wikipedia        : # Username
-  xing             : # Username
-  youtube          : # Username
-  zhihu            : # Username
+  # 社交媒体
+  bluesky               : #"bsky.app" # Replace this with you Bluesky username # 你的 Bluesky 用户名。
+  facebook              : # Username # 你的 Facebook 用户名。
+  flickr                : # Username # 你的 Flickr 用户名。
+  foursquare            : # Username # 你的 Foursquare 用户名。
+  goodreads             : # Username # 你的 Goodreads 用户名。
+  google_plus           : # Username # 你的 Google+ 用户名（注意：Google+ 已停用）。
+  keybase               : # Username # 你的 Keybase 用户名。
+  instagram             :  chenx1x1 # 你的 Instagram 用户名。
+  lastfm                : # Username # 你的 Last.fm 用户名。
+  linkedin              : # Username # 你的 LinkedIn 用户名。
+  mastodon              : # URL # 你的 Mastodon 个人资料链接。
+  medium                : # URL # 你的 Medium 个人资料链接。
+  pinterest             : # Username # 你的 Pinterest 用户名。
+  soundcloud            : # Username # 你的 SoundCloud 用户名。
+  steam                 : # Username # 你的 Steam 用户名。
+  telegram              : # URL # 你的 Telegram 个人资料链接。
+  tumblr                : # Username # 你的 Tumblr 用户名。
+  twitter               : # Username for X / Twitter # 你的 X（以前是 Twitter）用户名。
+  vine                  : # Username # 你的 Vine 用户名（注意：Vine 已停用）。
+  weibo                 : # Username # 你的微博用户名。
+  wikipedia             : # Username # 你的 Wikipedia 用户名。
+  xing                  : # Username # 你的 Xing 用户名。
+  youtube               : # Username # 你的 YouTube 用户名。
+  zhihu                 : # Username # 你的知乎用户名。
 
 # Publication Category - The following the list of publication categories and their headings
+# 出版物类别 - 以下是出版物类别及其标题的列表
 publication_category:
   books:
-    title: 'Books'
+    title: 'Books' # 定义“书籍”出版物类别及其显示标题。
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Articles' # 定义“手稿”（期刊文章）出版物类别及其显示标题。
   conferences:
-    title: 'Conference Papers'
+    title: 'Conference Papers' # 定义“会议论文”出版物类别及其显示标题。
 
 # Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
-words_per_minute         : 160
-future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false      #change to true to add link to talkmap on talks page
+# 站点设置
+teaser                  : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png" # 指定一个备用预告图文件名，如果未设置特定图片，则使用此文件。
+breadcrumbs             : false # true, false (default) # 启用或禁用面包屑导航。
+words_per_minute        : 160 # 设置阅读时间估算的每分钟字数。
+future                  : true # 允许 Jekyll 处理和显示未来日期的文章。
+read_more               : "disabled" # if enabled, adds "Read more" links to excerpts # 控制文章摘要后是否显示“阅读更多”链接。
+talkmap_link            : false       #change to true to add link to talkmap on talks page # 启用或禁用在讲座页面上到讲座地图的链接。
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider              : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom" # 指定评论系统提供商。
   disqus:
-    shortname            :
+    shortname           : # 你的 Disqus 短名称。
   discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+    server              : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org # Discourse 评论的服务器 URL。
   facebook:
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
+    appid               : # 你的 Facebook 应用 ID，用于评论。
+    num_posts           : # 5 (default) # 显示的 Facebook 评论数量。
+    colorscheme         : # "light" (default), "dark" # Facebook 评论的颜色方案。
+staticman: # Staticman 设置，一个用于处理静态网站评论和表单的服务。
+  allowedFields         : ['name', 'email', 'url', 'message'] # Staticman 提交允许的字段。
+  branch                : "gh-pages" # "master", "gh-pages" # Staticman 将提交数据到的 Git 分支。
+  commitMessage         : "New comment." # Staticman 提交的提交消息。
+  filename              : comment-{@timestamp} # 新评论的文件名格式。
+  format                : "yml" # 评论的文件格式（例如 "yml", "json"）。
+  moderation            : true # 启用或禁用 Staticman 提交的审核。
+  path                  : "_data/comments/{options.slug}" # Staticman 将保存评论数据的路径。
+  requiredFields        : ['name', 'email', 'message'] # Staticman 提交所需的字段。
   transforms:
-    email                : "md5"
+    email               : "md5" # 转换电子邮件字段（例如 "md5" 用于 Gravatar）。
   generatedFields:
     date:
-      type               : "date"
+      type              : "date" # 指定“日期”字段是日期类型。
       options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+        format          : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds" # 生成日期字段的格式。
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
-  path                   : # blank (default) uses feed.xml
-
+  hide                  : false       # change to true to hide the RSS feed in the footer # 在页脚隐藏或显示 RSS 订阅链接。
+  path                  : # blank (default) uses feed.xml # Atom 订阅文件路径。
 
 # SEO Related
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
-
+# SEO 相关
+google_site_verification : # 你的 Google 网站验证元标签内容。
+bing_site_verification  : # 你的 Bing 网站验证元标签内容。
+alexa_site_verification : # 你的 Alexa 网站验证元标签内容。
+yandex_site_verification : # 你的 Yandex 网站验证元标签内容。
 
 # Social Sharing
+# 社交分享
 twitter:
-  username               : &twitter
+  username              : #&twitter # 你的 Twitter 用户名，用于社交分享卡片。`&twitter` 是一个 YAML 锚点。
 facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+  username              : # 你的 Facebook 用户名，用于社交分享。
+  app_id                : # 你的 Facebook 应用 ID，用于社交分享。
+  publisher             : # 你的 Facebook 发布者 ID，用于社交分享。
+og_image                : # Open Graph/Twitter default site image # 默认的 Open Graph 和 Twitter 卡片图片。
 # For specifying social profiles
+# 用于指定社交资料
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
-
+  type                  : # Person or Organization (defaults to Person) # 指定网站代表“个人”还是“组织”。
+  name                  : # If the user or organization name differs from the site's name # 如果用户或组织名称与网站名称不同，则为替代名称。
+  links: # An array of links to social media profiles # 结构化数据中社交媒体资料的链接列表。
 
 # Analytics
+# 分析
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider              : "false" # false (default), "google", "google-universal", "google-analytics-4", "custom" # 指定分析提供商。
   google:
-    tracking_id          :
-
+    tracking_id         : # 你的 Google Analytics 跟踪 ID。
 
 # Reading Files
+# 读取文件
 include:
-  - .htaccess
-  - _pages
-  - files
-exclude:
+  - .htaccess # 将 .htaccess 文件包含在构建中。
+  - _pages # 将 _pages 目录包含在构建中。
+  - files # 将 files 目录包含在构建中。
+exclude: # 从 Jekyll 构建过程中排除某些文件和目录。
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -185,130 +199,131 @@ exclude:
   - README
   - tmp
   - vendor
-keep_files:
+keep_files: # 指定 Jekyll 在清理期间不应删除的文件和目录。
   - .git
   - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
+encoding: "utf-8" # 设置网站的字符编码。
+markdown_ext: "markdown,mkdown,mkdn,mkd,md" # 定义 Jekyll 将识别为 Markdown 的文件扩展名。
 
 # Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
+# 转换
+markdown: kramdown # 指定使用的 Markdown 处理器（Kramdown 是常用选择）。
+highlighter: rouge # 指定代码块的语法高亮器。
+lsi: false # 启用或禁用 LSI（潜在语义索引）以查找相关文章。
+excerpt_separator: "\n\n" # 定义文章摘要的分隔符。
+incremental: false # 启用或禁用增量重新生成以加快构建速度。
 
 # Markdown Processing
+# Markdown 处理
 kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
+  input: GFM # 将 Kramdown 输入格式设置为 GitHub Flavored Markdown。
+  hard_wrap: false # 禁用 Markdown 中的文本硬换行。
+  auto_ids: true # 自动为标题生成 ID。
+  footnote_nr: 1 # 脚标从 1 开始编号。
+  entity_output: as_char # 将 HTML 实体输出为字符。
+  toc_levels: 1..6 # 指定要包含在目录中的标题级别。
+  smart_quotes: lsquo,rsquo,ldquo,rdquo # 启用智能引号（卷曲引号）。
+  enable_coderay: false # 禁用 CodeRay 进行语法高亮（因为使用了 Rouge）。
 
 # These settings control the types of collections used by the template
+# 这些设置控制模板使用的集合类型
 collections:
   teaching:
-    output: true
-    permalink: /:collection/:path/
+    output: false # 启用“教学”集合的输出（生成页面）。
+    permalink: /:collection/:path/ # 定义“教学”项的永久链接结构。
   publications:
-    output: true
-    permalink: /:collection/:path/
+    output: true # 启用“出版物”集合的输出。
+    permalink: /:collection/:path/ # 定义“出版物”项的永久链接结构。
   portfolio:
-    output: true
-    permalink: /:collection/:path/
+    output: false # 启用“作品集”集合的输出。
+    permalink: /:collection/:path/ # 定义“作品集”项的永久链接结构。
   talks:
-    output: true
-    permalink: /:collection/:path/
-
+    output: true # 启用“讲座”集合的输出。
+    permalink: /:collection/:path/ # 定义“讲座”项的永久链接结构。
 
 # These settings control how pages and collections are included in the site
-defaults:
+# 这些设置控制页面和集合如何包含在网站中
+defaults: # 为各种内容类型设置默认的前置元数据值。
   # _posts
   - scope:
-      path: ""
-      type: posts
+      path: "" # 适用于所有文章，无论路径如何。
+      type: posts # 适用于文章。
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+      layout: single # 将文章的默认布局设置为“single”。
+      author_profile: true # 在文章上显示作者资料。
+      read_time: true # 显示文章的估计阅读时间。
+      comments: true # 在文章上启用评论。
+      share: true # 在文章上启用社交分享。
+      related: true # 显示相关文章。
   # _pages
   - scope:
-      path: ""
-      type: pages
+      path: "" # 适用于所有页面。
+      type: pages # 适用于页面。
     values:
-      layout: single
-      author_profile: true
+      layout: single # 将页面的默认布局设置为“single”。
+      author_profile: true # 在页面上显示作者资料。
   # _teaching
   - scope:
-      path: ""
-      type: teaching
+      path: "" # 适用于所有教学项。
+      type: teaching # 适用于教学集合项。
     values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
+      layout: single # 将教学项的默认布局设置为“single”。
+      author_profile: true # 在教学项上显示作者资料。
+      share: true # 在教学项上启用社交分享。
+      comments: true # 在教学项上启用评论。
   # _publications
   - scope:
-      path: ""
-      type: publications
+      path: "" # 适用于所有出版物项。
+      type: publications # 适用于出版物集合项。
     values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
+      layout: single # 将出版物项的默认布局设置为“single”。
+      author_profile: true # 在出版物项上显示作者资料。
+      share: true # 在出版物项上启用社交分享。
+      comments: true # 在出版物项上启用评论。
   # _portfolio
   - scope:
-      path: ""
-      type: portfolio
+      path: "" # 适用于所有作品集项。
+      type: portfolio # 适用于作品集集合项。
     values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
+      layout: single # 将作品集项的默认布局设置为“single”。
+      author_profile: true # 在作品集项上显示作者资料。
+      share: true # 在作品集项上启用社交分享。
+      comment: true # 在作品集项上启用评论。
   # _talks
   - scope:
-      path: ""
-      type: talks
+      path: "" # 适用于所有讲座项。
+      type: talks # 适用于讲座集合项。
     values:
-      layout: talk
-      author_profile: true
-      share: true
-
+      layout: talk # 将讲座项的默认布局设置为“talk”。
+      author_profile: true # 在讲座项上显示作者资料。
+      share: true # 在讲座项上启用社交分享。
 
 # Sass/SCSS
+# Sass/SCSS
 sass:
-  sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
+  sass_dir: _sass # 指定 Sass/SCSS 文件所在的目录。
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style # 将 Sass 输出样式设置为压缩，以减小 CSS 文件大小。
 
 # Outputting
-permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
-timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
+# 输出
+permalink: /:categories/:title/ # 定义文章的默认永久链接结构。
+# paginate: 5 # amount of posts to show # 设置每页文章数量，用于分页。
+# paginate_path: /page:num/ # 定义分页页面的永久链接结构。
+timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones # 设置网站生成时区。
 
 # Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-redirect-from
-  - jemoji
+# 插件
+plugins: # 列出要激活的 Jekyll 插件。
+  - jekyll-feed # 为你的网站生成 Atom 订阅。
+  - jekyll-gist # 在你的文章中嵌入 GitHub Gists。
+  - jekyll-paginate # 为你的网站添加分页功能。
+  - jekyll-sitemap # 为搜索引擎生成 sitemap.xml 文件。
+  - jekyll-redirect-from # 允许从旧 URL 轻松重定向到新 URL。
+  - jemoji # 将 emoji 短代码转换为实际的 emoji 表情。
 
 # Mimic GitHub Pages with --safe
-whitelist:
+# 使用 --safe 模仿 GitHub Pages
+whitelist: # 列出在安全模式下（例如在 GitHub Pages 上）运行 Jekyll 时允许的插件。
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
@@ -316,39 +331,46 @@ whitelist:
   - jekyll-redirect-from
   - jemoji
 
-
 # Archives
+# 归档
 #  Type
+#  类型
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - 使用 Liquid 构建的兼容 GitHub Pages 的归档页面 ~> type: liquid (默认)
 #  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  - Jekyll Archives 插件归档页面 ~> type: jekyll-archives
 #  Path (examples)
+#  路径（示例）
 #  - Archive page should exist at path when using Liquid method or you can
+#  - 当使用 Liquid 方法时，归档页面应存在于该路径，否则你可能会
 #    expect broken links (especially with breadcrumbs enabled)
+#    遇到断开的链接（特别是启用了面包屑时）
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path>/tags/my-awesome-tag/index.html ~> 路径: /tags/
 #  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+#  - <base_path/categories/my-awesome-category/index.html ~> 路径: /categories/
+category_archive: # 类别归档页面的设置。
+  type: liquid # 使用 Liquid 生成归档页面。
+  path: /categories/ # 定义类别归档页面的路径。
+tag_archive: # 标签归档页面的设置。
+  type: liquid # 使用 Liquid 生成归档页面。
+  path: /tags/ # 定义标签归档页面的路径。
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
+# jekyll-archives: # jekyll-archives 插件的示例配置（目前已注释掉）。
 #   enabled:
 #     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
+# #     - tags
+# #   layouts:
+# #     category: archive-taxonomy
+# #     tag: archive-taxonomy
+# #   permalinks:
+# #     category: /categories/:name/
+# #     tag: /tags/:name/
 
 # HTML Compression
+# HTML 压缩
 # - http://jch.penibelst.de/
-compress_html:
-  clippings: all
+compress_html: # HTML 压缩设置，用于减小文件大小。
+  clippings: all # 删除所有 HTML 注释、空白和空属性。
   ignore:
-    envs: development
+    envs: development # 在指定环境中忽略压缩（例如“development”）。
