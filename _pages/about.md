@@ -9,6 +9,9 @@ redirect_from:
 
 Hi, I'm Jiawei Chen, a third-year Ph.D. candidate in Computer Science at Old Dominion University, advised by Dr. Rui Ning. My research interests foucs on Practical Graph Backdoor in Real-World and the Security of Graph-Related Large Language Models.
 
+
+<p style="color:red;"><b>I am actively seeking Internship and Visiting Student opportunities!!!</b></p>
+
 Education
 ======
 
