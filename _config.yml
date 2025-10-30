@@ -100,7 +100,7 @@ publication_category:
 # Site Settings
 # 站点设置
 teaser                  : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png" # 指定一个备用预告图文件名，如果未设置特定图片，则使用此文件。
-breadcrumbs             : false # true, false (default) # 启用或禁用面包屑导航。
+breadcrumbs             : True # true, false (default) # 启用或禁用面包屑导航。
 words_per_minute        : 160 # 设置阅读时间估算的每分钟字数。
 future                  : true # 允许 Jekyll 处理和显示未来日期的文章。
 read_more               : "disabled" # if enabled, adds "Read more" links to excerpts # 控制文章摘要后是否显示“阅读更多”链接。
