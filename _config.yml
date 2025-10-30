@@ -235,8 +235,11 @@ collections:
     output: true # 启用“出版物”集合的输出。
     permalink: /:collection/:path/ # 定义“出版物”项的永久链接结构。
   portfolio:
-    output: false # 启用“作品集”集合的输出。
-    permalink: /:collection/:path/ # 定义“作品集”项的永久链接结构。
+    output: false # 启用"作品集"集合的输出。
+    permalink: /:collection/:path/ # 定义"作品集"项的永久链接结构。
+  photography:
+    output: true # 启用"摄影"集合的输出。
+    permalink: /:collection/:path/ # 定义"摄影"项的永久链接结构。
   talks:
     output: true # 启用“讲座”集合的输出。
     permalink: /:collection/:path/ # 定义“讲座”项的永久链接结构。
